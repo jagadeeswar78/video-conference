@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>video conference call</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='video.css'>
+    <script src='video.js'></script>
+    <!-- <script src='video.js'></script> -->
+</head>
+<body>
+
+    <main>
+        <section id="room-name-wrapper">
+            <p class="my"><b><i><span>Video Conference Call</span></i></b></p>
+            
+        </section>
+                <div id="video-streams" class="cl">
+                    <div class="cl1">
+                    <div class="video-container item1" id="user-container-1">
+                        <div class="video-player" id="user-1"></div> 
+                        <div class="username-wrapper"><span class="user-name"><i>Jagadeeswar</i></span></div>
+                    </div>
+
+                    <div class="video-container item2" id="user-container-2">
+                        <div class="video-player" id="user-2"></div> 
+                        <div class="username-wrapper"><span class="user-name"><i>Raja</i></span></div>
+                    </div>
+
+                    <div class="video-container item3" id="user-container-3">
+                        <div class="video-player" id="user-3"></div> 
+                        <div class="username-wrapper"><span class="user-name"><i>Sai</i></span></div>
+                    </div>
+                    </div>
+                    <div class="cl2">
+                    <div class="video-container item4" id="user-container-4">
+                        <div class="video-player" id="user-4"></div> 
+                        <div class="username-wrapper"><span class="user-name"><i>Revanth</i></span></div>
+                    </div>
+
+                    <div class="video-container item5" id="user-container-4">
+                        <div class="video-player" id="user-5"></div> 
+                        <div class="username-wrapper"><span class="user-name"><i>Mahesh</i></span></div>
+                    </div>  
+                    </div>
+                    
+                </div>
+                
+
+        <section id="controls-wrapper">
+            <div class="icon-wrapper">
+                <img class="control-icon" id="mic-btn" src="data:image/png;base64,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">
+            </div>
+
+            <div class="icon-wrapper">
+                <img class="control-icon" id="camera-btn" src="https://simpleicon.com/wp-content/uploads/camera.svg">
+            </div>
+
+            <div class="icon-wrapper">
+                <img class="control-icon" id="leave-btn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEX///8AAACmpqbc3Nz4+PidnZ1GRkZQUFDm5ubU1NTr6+v7+/vy8vLi4uLAwMDPz880NDSxsbERERFdXV12dnY6OjolJSWPj48LCwtAQEC3t7dYWFhiYmIgICDHx8e9vb2AgIBsbGyJiYksLCwYGBhKSkqJUVVLAAAD3UlEQVR4nO3da3OiMBiG4SAeqth6LlpbTyv//y/uujtuJRE6wsOb8PrcH3Wm6TUVAkKoMYwxxhhjjLEAimcd6fYjQd9uEHlofRAzdnz4Lk1fZYBvvoBRtBpLAJPMnzDqSAgnHoHRRkLobSu8NJfY2fR8CqMXCimkkEJ9wnPWb7qNX+Gg23TJxLOw+fGGFMKjEB2F+ChERyE+CtFRiI9CdBTioxAdhfgoREchPgrRUYiPQnQU4qMQHYX4KERHIT4K0VGIj0J0FOKjEB2F+ChERyG+sITDdHn6AK/CCEkYb/+++DWDjhiQcDK/vtxDjhiOsNv/fv0NOGI4wtnN62vgoq9whIvcb9KFjRiMsDvNvXOAjRiOcJV7J4LtUIMRmmNeGA1BI4YjnEX5UOsvwxGO8xtiFB0xI4YjNDtLCJr4AxKa1CZCJv6QhObTEn4h1phKC+My4cjeFLdJ/RGlhaP5zXjv9u7SWXd9qj+itDD3SVw67zoLr+tP/OLC/c14E/ftoyWcx3UHFBfeGO59BMd9i7iqewwuLzSHf4Od7z9RIZ5bRPej/FgehGZ4GmwGadEp4Ie9Kdac+H0IjUnKZoGDTbyzuT6QH2FpydYS1pv4AxSa13eL+Fln4g9R6D4zJ63xw4IUQo/BwxQ6x+Dr6hN/oELnGDyrPPEHKnSPwQ9Vf1KoQtwxeLBCs7SJFSf+cIXjjSVcVZv4wxWa+GwRPyv9mErCUSzRqzMrVjoGryDcD9b20M00d8apMvE/LEycPYBgvypcdXtYuCgaXaRt80L76oJ0u8aF9rmbdIumhSN7Dy6d8xUrWvjiS3bt8YdJ8m9op347fIJ9qf758AmOafQfl17Sfm4hlc/zQ5H0n+Or/55G/Xdt6r8v1f+dt/rrFgquPZVf8mz99cM43WaLXvHs1vprwNe7TYp2/62/jn/6P1zBvyhp+70Yt/fJ3t1Btv5+mvI79xTcEzW6Pee787VS++9ry91Bu3bXHx4tYPvuTfxhhaWC+0vLhRruES4VqrjPW/+9+k+93kL9mhn96570r107WkJ16w/1ryHVvw5Y/1ruJ1iPr/+ZCvqfi/H9bBPsv5gNSfjnz5gu0zfFz6dpJgrRUYiPQnQU4qMQHYX4KERHIT4K0VGIj0J0FOKjEB2F+ChERyE+CtFRiI9CdBTioxAdhfgoREchPgrRUYiPQnQU4ns2Ybfpkolf4TnrN1y28SsUj0IKKaRQh9BZWizZ4495rJCztliyvgDQJJlHIXZhRVH7n3+RppqCV1YU5W1LXAGXb5W38/NBPUjsZq7Fs450e0kfY4wxxhhjDNJvpE9Y4qBxBJIAAAAASUVORK5CYII=">
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
